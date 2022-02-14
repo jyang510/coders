@@ -1,3 +1,5 @@
+https://programmers.co.kr/learn/courses/30/lessons/42587
+
 // for문으로 돌면서 확인하는데, 만약 큰 게 있다면 뒤로 가게 하면 될 것 같다
 // ...라고 생각했는데, 하다보니 while문으로 배열의 길이 조건만 거는 게 더 편할 것 같다
 
