@@ -1,26 +1,14 @@
 https://programmers.co.kr/learn/courses/30/lessons/12981
 
 function solution(n, words) {
-    let answer = [words[0]];
-    console.log(words[0])
-    let cnt = 1; 
-    for(let i = 1; i < words.length; i++){ 
-        let prev = words[i - 1]; 
-        let now = words[i]; 
-        if(now.length <= 1) { 
-            return [i % n + 1, cnt]; 
-        }
-        if(prev[prev.length - 1] !== now[0]) { 
-            console.log('이거는?', prev[prev.length - 1] )
-            return [i % n + 1, cnt];
-        }
-        if(answer.includes(now)) {
-            return [i % n + 1, cnt];
-        }
-        if(i % n + 1 === n) { 
-            cnt++; 
-        }
-        answer.push(now); 
+    let hash = {};
+
+    for (let i = 1; i < words.length; i++) {
+        if (words[i - 1].charAt(words[i - 1].length - 1) !== words[i].charAt(0)) 
+            return [(i % n) + 1, Math.floor(i / n) + 1];
+
+        if (hash[words[i]]) return [(i % n) + 1, Math.floor(i / n) + 1];
+        hash[words[i - 1]] = words[i - 1];
     }
-    return answer = [0, 0]; 
+    return [0, 0];
 }
