@@ -1,5 +1,5 @@
 # coders
-코드스테이츠 SEB 34기 양재영 님과 함께하는 코드 리뷰 
+코드스테이츠 SEB 34기 권상현 님과 함께하는 코드 리뷰 
 https://github.com/sangcode33/coders
 
 ** 규칙 ** 
