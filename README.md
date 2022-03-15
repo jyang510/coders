@@ -1,18 +1,9 @@
 # coders
+코드스테이츠 SEB 34기 양재영 님과 함께하는 코드 리뷰 
+https://github.com/sangcode33/coders
 
-let result = []; 
-let num = 0; 
+** 규칙 ** 
 
-for (let i = 0; i <= num; i++) { 
-    if (i === 0) { 
-        result.push(0);
-    } else if (i === 1) {
-        result.push(1);
-    } else { 
-        result.push(result[i - 2] + result[i - 1]);
-        
-    } 
-    console.log(num);
-    console.log(result); 
-}
-}
+1. 월 ~ 금요일 16시까지 프로그래머스 코드 문제를 풀고 업로드 
+2. 20시까지 코드 리뷰를 포함한 코멘트 달기 
+3. 22시 화상 리뷰 진행
